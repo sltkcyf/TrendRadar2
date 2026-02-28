@@ -176,9 +176,9 @@ presets:
     # 时间段定义 ── 只有晚间汇总需要特殊处理
     periods:
       evening_summary:
-        name: "下午汇总"
-        start: "15:00"
-        end: "16:00"
+        name: "晚间汇总"
+        start: "20:00"
+        end: "22:00"
         analyze: true              # 晚间做 AI 分析
         ai_mode: "daily"           # AI 也汇总全天内容
         report_mode: "daily"       # 切换为当日全部新闻汇总
@@ -389,8 +389,8 @@ presets:
 #     其余时间走默认配置（静默采集）
 
 custom:
-  name: "need_send"
-  description: "每天只在下午3点进行一次AI分析（全天汇总），静默期可推送当前热点"
+  name: "自定义"
+  description: "完全自由定义时间段、日计划和周映射。"
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   # 默认配置

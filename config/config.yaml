@@ -112,11 +112,12 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
-      # max_age_days: 1               # 示例：只推送1天内的文章
-
+    # ── 中文优质源 ──
+    - id: "jiqizhixin"
+      name: "机器之心"
+      url: "https://www.jiqizhixin.com/rss"
+      max_age_days: 3
+      
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
@@ -145,13 +146,7 @@ rss:
       name: "CrewAI 博客"
       url: "https://www.crewai.com/blog/rss.xml"
       max_age_days: 7
-
-    # ── 中文优质源 ──
-    - id: "jiqizhixin"
-      name: "机器之心"
-      url: "https://www.jiqizhixin.com/rss"
-      max_age_days: 3
-      
+ 
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"

@@ -113,39 +113,45 @@ rss:
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
     # ── 中文优质源 ──
-    - id: "jiqizhixin"
-      name: "机器之心"
-      url: "https://www.jiqizhixin.com/rss"
-      max_age_days: 3
+    - id: "36kr-flashes"
+      name: "36氪快讯"
+      url: "www.36kr.com/feed"
+      max_age_days: 1
       
     - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       # max_age_days: 7               # 示例：推送7天内的文章（更新较慢的博客）
     
-    # ── 大模型资讯 ──
-    - id: "huggingface-blog"
-      name: "Hugging Face 博客"
-      url: "https://huggingface.co/blog/rss.xml"
+    - id: "qbitai"
+      name: "量子位"
+      url: "https://www.qbitai.com/feed"
       max_age_days: 3
 
-     # ── 编程AI ──
+    - id: "openai-blog"
+      name: "OpenAI 官方博客"
+      url: "https://openai.com/news/rss.xml"
+      max_age_days: 7
+
     - id: "langchain-blog"
       name: "LangChain 博客"
       url: "https://blog.langchain.dev/rss/"
-      max_age_days: 7
-
-    # ── 视觉AI ──
-    - id: "stability-ai"
-      name: "Stability AI"
-      url: "https://stability.ai/news/rss.xml"
       max_age_days: 3
       
-    # ── Agent ──
-    - id: "crewai-blog"
-      name: "CrewAI 博客"
-      url: "https://www.crewai.com/blog/rss.xml"
-      max_age_days: 7
+    - id: "kaiyuanzhongguo"
+      name: "开源中国"
+      url: "https://rsshub.app/oschina/news/project"
+      max_age_days: 3
+
+    - id: "arxiv-ai"
+      name: "arXivAI 论文"
+      url: "https://rss.arxiv.org/rss/cs.AI"
+      max_age_days: 1
+      
+      - id: "hackernews"
+      name: "Hacker News AI"
+      url: "https://hnrss.org/newest?q=AI"
+      max_age_days: 3 
  
     # 自定义源示例
     # - id: "custom-feed"

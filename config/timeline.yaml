@@ -165,7 +165,7 @@ presets:
     # 默认配置 ── 不命中任何时间段时的行为
     default:
       collect: true                # 始终采集
-      analyze: true                # AI 分析当前榜单
+      analyze: false                # AI 分析当前榜单
       ai_mode: "current"           # AI 分析当前榜单
       push: true                   # 每次推送当前在榜热点
       report_mode: "current"       # 当前在榜的新闻
@@ -176,9 +176,9 @@ presets:
     # 时间段定义 ── 只有晚间汇总需要特殊处理
     periods:
       evening_summary:
-        name: "晚间汇总"
-        start: "20:00"
-        end: "22:00"
+        name: "下午汇总"
+        start: "15:00"
+        end: "16:00"
         analyze: true              # 晚间做 AI 分析
         ai_mode: "daily"           # AI 也汇总全天内容
         report_mode: "daily"       # 切换为当日全部新闻汇总
@@ -389,8 +389,8 @@ presets:
 #     其余时间走默认配置（静默采集）
 
 custom:
-  name: "自定义"
-  description: "完全自由定义时间段、日计划和周映射。"
+  name: "need_send"
+  description: "每天只在下午3点进行一次AI分析（全天汇总），静默期可推送当前热点"
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   # 默认配置

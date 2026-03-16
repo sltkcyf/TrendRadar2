@@ -182,7 +182,7 @@ presets:
         name: "下午汇总"
         start: "15:00"
         end: "16:00"
-        # frequency_file: "xxx.txt"               # 关键词文件（可选，位于 config/custom/keyword/）
+        frequency_file: "frequency_words.txt"      # 关键词文件（可选，位于 config/custom/keyword/）
         # interests_file: "xxx.txt"                # AI 兴趣文件（可选，位于 config/custom/ai/）
         # filter_method: "keyword"                # 筛选策略（可选: keyword | ai，不填用全局 filter.method）
         analyze: true              # 晚间做 AI 分析

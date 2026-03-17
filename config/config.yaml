@@ -292,8 +292,8 @@ display:
   #   - AI 分析：由 ai_analysis.include_standalone 开关控制，将完整数据送入 AI 做深度分析
   # 两者共享此处的平台/RSS 配置，但开关互相独立（可只开 AI 分析、不推送展示）
   standalone:
-    platforms: ["zhihu", "wallstreetcn-hot"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    platforms: ["zhihu", "百度热搜","bilibili 热搜","ithome","juejin","GitHub","solidot","v2ex","sspai"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    rss_feeds: ["openai-blog","langchain-blog","ruanyifeng","36kr-flashes","kaiyuanzhongguo","arxiv-ai"]                     # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
@@ -456,7 +456,7 @@ ai:
                                     # 注意：如果 API 不支持此参数(报 HTTP 400)，请设为 0 以禁用发送
   # 高级选项
   num_retries: 1                    # 失败重试次数
-  fallback_models: []               # 备用模型列表（可选）
+  fallback_models: ["DeepSeek-V3"]               # 备用模型列表（可选）
                                     # 示例: ["openai/gpt-4o-mini", "openai/deepseek-ai/DeepSeek-V3"]
 
   # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

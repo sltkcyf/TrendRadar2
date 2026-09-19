@@ -159,7 +159,7 @@ presets:
   # 晚间汇总：推送 ✓ | AI分析 ✓ | 只推/分析一次
   # ───────────────────────────────────────────────────────────
   morning_evening:
-    name: "早晚汇总"
+    name: "下午汇总"
     description: "全天推送 + 晚间当日汇总。适合大多数人。"
 
     # 默认配置 ── 不命中任何时间段时的行为
@@ -179,9 +179,9 @@ presets:
     # 时间段定义 ── 只有晚间汇总需要特殊处理
     periods:
       evening_summary:
-        name: "晚间汇总"
-        start: "20:00"
-        end: "22:00"
+        name: "下午汇总"
+        start: "15:30"
+        end: "16:30"
         # frequency_file: "xxx.txt"               # 关键词文件（可选，位于 config/custom/keyword/）
         # interests_file: "xxx.txt"                # AI 兴趣文件（可选，位于 config/custom/ai/）
         # filter_method: "keyword"                # 筛选策略（可选: keyword | ai，不填用全局 filter.method）
